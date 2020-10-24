@@ -9,16 +9,25 @@
 
 
             }
+            button{
+                width: 10%;
+                height: 7%;
+                background-color: green;
+
+            }
+            .loginScreen{
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-color: aqua;
+            }
 
 
 
         </style>
         <script>
             function yeet(){
-                var pass;
-                pass = document.getElementById('Username').value;
-                alert(document.getElementById('Username').value);
-                alert(pass);
+                alert("yeet");
             }
             
 
@@ -26,17 +35,15 @@
     </head>
 
     <body>
-        <form>
+
+        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+        <form action="" id="id01" class="loginScreen">
             <label>Username</label>
-            <br>
-            <input type="text" id="Username">
-            <br>
-            <label>Password</label>
-            <br>
-            <input type="text" id="Password">
-            <br>
-            <button onclick="yeet()">Submit</button>
-            
+
+
+
+
         </form>
         
         
